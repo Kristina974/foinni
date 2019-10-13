@@ -1,0 +1,310 @@
+.main {
+	padding-top: 120px;
+	background-color: #fffcf4;
+	font-family: $roboto;
+	font-weight: 400;
+
+	&_headline {
+		color: $gray-color;
+	}
+	
+	&_main-content {
+		line-height: 2;
+	}
+
+	&_description {
+		margin-right: auto;
+    	margin-left: auto;
+		max-width: 895px;
+		text-align: center;
+		letter-spacing: 1.3px;
+		font-size: 18px;
+		
+		&_text {
+			color: #a5a4a5;
+			margin-top: 55px;
+			margin-bottom: 80px;
+		}
+
+	}
+
+	&_name-logo {
+		color: $green-color;
+		text-transform: $uppercase;
+	}
+
+	&_services {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: -50px;
+		flex-wrap: wrap;
+
+		&_description {
+			width: 355px;
+			margin-bottom: 50px;
+			padding: 30px 10px;
+			border: 1px solid #c3c1bf;
+			font-size: 14px;
+			font-weight: 100;
+			text-align: center;
+				
+			&:hover {
+				border: 1px solid $green-color;
+				box-shadow: inset 0 0 0 2px $green-color;
+			}
+
+			&:hover .main_caption {
+				color: $green-color;
+			}
+
+		}
+
+	}
+
+	&_caption {
+		margin-top: 20px;
+		margin-bottom: 35px;
+		font-size: 24px;
+	}
+
+	.co-workers {
+		
+		&_headline {
+			margin-top: 120px;
+			margin-bottom: 70px;
+			text-align: center;
+		}
+
+		&_photo {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 140px;
+		}
+
+		&_photo_card {
+			position: relative;
+			height: 355px;
+
+			&:hover .co-workers_hover {
+				opacity: 0.9;
+			}
+
+			&:hover .co-workers_name {
+				display: none;
+			}
+			
+		}
+
+		&_img {
+			width: 268px;
+			height: 355px;
+			object-fit: cover;
+		}		
+
+		&_name {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			display: flex;
+    		flex-direction: column;
+    		justify-content: center;
+    		width: 269px;
+			height: 70px;
+			font-weight: 400;
+			font-size: 18px;
+			color: #fff;
+			background-color: #424243;
+			opacity: 0.9;
+			text-align: center;
+
+			&.liker {
+				width: 237px;
+			}
+
+		}
+
+		&_hover {
+			position: absolute;
+			top: -10px;
+			left: 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			width: 270px;
+			height: 390px;
+			padding-top: 85px;
+			background-color: $green-color;
+			opacity: 0;
+
+			&_name {
+			    color: #fff;
+			    font-size: 18px;
+			    font-weight: 400;
+			    text-align: center;
+			}	
+
+		}
+
+		&_social-networks {
+			display: flex;
+		    justify-content: center;
+		    width: 270px;
+		    padding: 5px 0;
+		    border-top: 1px solid #fff;
+		    border-bottom: 1px solid #fff;
+
+			&_link {
+				margin-right: 10px;
+			}
+
+		}
+
+	}
+
+	.works-header {
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.our-works_nav {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 50px;
+ 		
+ 		&_link {
+ 			padding: 10px 0;
+			color: $gray-color;
+			font-size: 18px;
+			font-weight: bold;
+			border-bottom: 2px solid transparent;
+
+			&:hover {
+				color: $green-color;
+				border-bottom: 2px solid $green-color;
+			}
+
+ 		}
+
+ 		&_link:not(:last-child) {
+			margin-right: 35px;
+ 		}
+
+	}
+
+	.our-works {
+		padding-bottom:110px;
+
+		&_photo {
+ 		display: flex;
+ 		justify-content: flex-start;
+ 		flex-wrap: wrap;
+
+ 			&_img {
+	 			width: 390px;
+	 			height: 390px;
+	 			object-fit: cover;
+
+	 			&:nth-last-child(3n) {
+	 				margin-bottom: 50px;
+	 			}
+			
+			}
+
+		}
+
+		&_button {
+			display: block;
+			margin: 0 auto;
+			padding: 20px 60px;
+			background-color: $green-color;
+			color: #fff;
+			font-size: 18px;
+			border: none;
+		}
+
+	}
+
+	.price {
+		padding-bottom: 125px;
+		
+		&_header {
+			margin-bottom: 55px;
+			text-align: center;
+		}
+
+		&_wrapper-card {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&_value {
+			margin-bottom: 30px;
+			padding: 20px 80px;
+			border: 1px solid $dark-gray-color;
+			color: #000;
+
+			&_current {
+				font-size: 36px;
+			}
+
+			&_currency {
+				font-size: 24px;
+				vertical-align: top;
+			}
+		}
+
+		&_card {
+			max-width: 265px;
+			font-weight: 500;
+			font-size: 14px;
+			color: #a5a4a5;
+			text-align: center;
+			border: 1px solid transparent;
+				
+			&:hover .price_card_name {
+				color: $green-color;
+
+			}
+
+			&_limit {
+				margin-top: 30px;
+				padding-bottom: 20px;
+				border: 1px solid transparent;
+			}
+
+			&_limit:hover {
+				border: 1px solid $green-color;
+			}	
+
+			&_limit:hover .price_button {
+				background: $green-color;
+				border: 1px solid transparent;
+				color: #fff;
+			}	
+
+			&_limit:hover .price_value {
+				border: 1px solid transparent;
+				color: #fff;
+				background: $green-color;
+			}
+			
+		}
+
+		&_button {
+			margin-top: 45px;
+			padding: 10px;
+			border: 1px solid $dark-gray-color;
+			background: none;
+		}
+
+		&_option {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			min-height: 160px;
+		}
+
+	}
+	
+}
+	

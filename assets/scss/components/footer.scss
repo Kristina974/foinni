@@ -1,0 +1,153 @@
+.footer {
+	font-family: $roboto;
+	color: #bab7b2;
+
+	&_form {
+		background: url("../img/bg-footer.png") no-repeat;
+		background-size: cover;
+		background-position: center;
+
+		&_header {
+			margin-bottom: 25px;
+			text-align: center;
+			text-transform: $uppercase;
+			color: $white-color;
+			font-weight: 400;
+		}
+
+	}
+
+	&_form-wrapper {
+		padding: 35px 0 35px 0;
+		text-align: center;
+	}
+
+	&_info-field {
+		width: 48.5%;
+		padding: 15px;
+		background: none;
+		border: $border-form;
+	}
+
+	&_info-field::placeholder {
+		color: $placeholder-color;
+	}
+
+	&_box {
+		display: flex;
+		width: 76.5%;
+		justify-content: space-between;
+		margin: 0 auto;
+	}
+
+	&_message {
+		width: 76.5%;
+		height: 215px;
+		margin: 20px 0;
+		padding: 20px;
+		background: none;
+		border: $border-form;
+		resize: none;
+	}
+
+	&_message::placeholder {
+		color: $placeholder-color;
+	}
+
+	&_button-send {
+		display: block;
+		margin: 0 auto;
+		padding: 15px 40px;
+		border: none;
+		background-color: $green-color;
+		font-weight: 100;
+		color: $white-color;
+	}
+
+	&_box_nav {
+		background-color: #0b0a0a;
+	}
+
+	&_nav {
+		display: flex;
+		justify-content: space-between;
+		padding-top: 40px;
+		padding-bottom: 70px;
+
+		&_about {
+			max-width: 31%;
+			line-height: 1.7;
+		}
+
+		&_section {
+			min-width: 25%;
+		}
+
+	}
+
+	&_header {
+		margin-bottom: 20px;
+		color: $white-color;
+		font-weight: 400;
+	}
+
+	&_services {
+		display: flex;
+		line-height: 1.7;
+		
+		&_link {
+			margin-right: 20px;
+		}
+    
+		&_item {
+			color: #bab7b2;
+		}
+		
+	} 
+
+	&_nav_find {
+		max-width: 25%;
+	}
+    
+	&_box_icon {
+		display: flex;
+		margin-bottom: 15px;
+	}
+
+	&_icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 35px;
+		height: 35px;
+		margin-right: 10px;
+		padding: 20px;
+		border: 2px solid #8f8e91;
+	}
+
+	&_input_email {
+		width: 250px;
+		height: 40px;
+		margin-bottom: 20px;
+		padding: 10px;
+		background: none;
+		border: 1px solid #8f8e91;
+	}
+
+	&_button_sub {
+		display: block;
+		padding: 10px 15px;
+		border: none;
+		background-color: $green-color;
+		color: $white-color;
+	}
+
+	&_autor {
+		background-color: #000;
+	}
+
+	&_footnote {
+		padding: 30px;
+		text-align: center;
+	}
+}
